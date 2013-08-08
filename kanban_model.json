@@ -1,0 +1,48 @@
+// User has many kanban.
+// A kanban has one user.
+/* A kanban has many blocks and (hopefully) a block has many kanban so that I
+		can move them around, but for now just one kanban*/
+
+// Questions: Do I need a model for the columns or are they only visual?
+// How do I maintain state in a board if it is only visual?
+
+kanban = {
+	"_id": BSON::ObjectID('...')
+	"title": "WDI Project 3",
+	"user_id": 1,
+	"blocks": [
+		{
+			"_id": BSON::ObjectID('...')
+			"name": "Stuff I have to do."
+			"description": "blah blah blah text"
+			"tasks": [
+				{ "do_it": "Do the D.A.N.C.E.", "_id": ObjectID },
+				{ "do_it": "1, 2, 3, 4 Fight!", "_id": ObjectID },
+				{ "do_it": "Stick to the B.E.A.T.", "_id": ObjectID },
+				{ "do_it": "Get ready to ignite.", "_id": ObjectID },
+			]
+		},
+		{
+			"_id": BSON::ObjectID('...')
+			"name": "Stuff I have to do."
+			"description": "blah blah blah text"
+			"tasks": [
+				{ "do_it": "Do the D.A.N.C.E.", "_id": ObjectID },
+				{ "do_it": "1, 2, 3, 4 Fight!", "_id": ObjectID },
+				{ "do_it": "Stick to the B.E.A.T.", "_id": ObjectID },
+				{ "do_it": "Get ready to ignite.", "_id": ObjectID },
+			]
+		},
+		{
+			"_id": BSON::ObjectID('...')
+			"name": "Stuff I have to do."
+			"description": "blah blah blah text"
+			"tasks": [
+				{ "do_it": "Do the D.A.N.C.E.", "_id": ObjectID },
+				{ "do_it": "1, 2, 3, 4 Fight!", "_id": ObjectID },
+				{ "do_it": "Stick to the B.E.A.T.", "_id": ObjectID },
+				{ "do_it": "Get ready to ignite.", "_id": ObjectID },
+			]
+		}
+	]
+}
